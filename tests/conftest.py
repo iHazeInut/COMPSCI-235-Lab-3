@@ -22,7 +22,7 @@ def in_memory_repo():
 def client():
     my_app = create_app({
         'TESTING': True,                                # Set to True during testing.
-        'TEST_DATA_PATH': TEST_DATA_PATH,               # Path for loading test data into the repository.
+        'TEST_DATA_PATH': os.path.join('C:', os.sep, 'Users', 'iHazelnut', 'OneDrive - The University of Auckland', 'Y3S1', 'CompSci 235', 'Labs', 'Lab 3', 'COMPSCI-235-Lab-3', 'tests', 'data'),               # Path for loading test data into the repository.
         'WTF_CSRF_ENABLED': False                       # test_client will not send a CSRF token, so disable validation.
     })
 
